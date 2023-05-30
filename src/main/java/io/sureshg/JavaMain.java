@@ -1,5 +1,6 @@
 package io.sureshg;
 
+import java.security.SecureRandom;
 import java.util.Random;
 import java.util.stream.Stream;
 
@@ -30,7 +31,7 @@ public class JavaMain {
 
     System.out.println("Hex: " + toHex(new byte[] {0b1, 2, 3, 4, 5}));
     byte[] b = new byte[128];
-    new Random().nextBytes(b);
+    new SecureRandom().nextBytes(b);
     System.out.println("Hex: " + toHex(b));
   }
 
